@@ -33,7 +33,6 @@ android {
 }
 
 ext {
-    supportLibraryVersion = '25.2.0'
     retrofitVersion = '2.2.0'
     okhttpVersion = '3.6.0'
     parcelablesVersion = '1.1.6'
@@ -60,10 +59,10 @@ dependencies {
     compile "org.parceler:parceler-api:$parcelablesVersion"
     kapt "org.parceler:parceler:$parcelablesVersion"
     //Support
-    compile "com.android.support:appcompat-v7:$supportLibraryVersion"
-    compile "com.android.support:design:$supportLibraryVersion"
-    compile "com.android.support:recyclerview-v7:$supportLibraryVersion"
-    compile "com.android.support:percent:$supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:25.2.0"
+    compile "com.android.support:design:25.2.0"
+    compile "com.android.support:recyclerview-v7:25.2.0"
+    compile "com.android.support:percent:25.2.0"
     //Font support in xml
     compile "uk.co.chrisjenx:calligraphy:2.2.0"
     //ReactiveX
