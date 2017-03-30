@@ -1,5 +1,6 @@
 package io.ckl.boilerplate.modules.main
 
+import android.app.Activity
 import io.ckl.boilerplate.api_services.GreetingAPIService
 import io.ckl.boilerplate.models.Greeting
 
@@ -11,9 +12,11 @@ import io.ckl.boilerplate.models.Greeting
 
  * The presenter is responsible for the business logic, fetching models and telling the view to update.
  */
-class MainPresenter(internal var view: MainInterfaces.View?): MainInterfaces.Presenter {
+class MainPresenter(internal var view: MainContracts.View?): MainContracts.Presenter, MainContracts.InteractorOutput {
+    var interactor: MainContracts.Interactor? = MainInteractor(this)
+    var router: MainContracts.Router? = MainRouter(view as? Activity)
 
-    // region MainInterfaces.Presenter
+    // region MainContracts.Presenter
 
     override fun onCreate() {
         greet()

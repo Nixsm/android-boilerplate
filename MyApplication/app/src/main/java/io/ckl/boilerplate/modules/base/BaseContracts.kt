@@ -1,6 +1,6 @@
 package io.ckl.boilerplate.modules.base
 
-class BaseInterfaces {
+class BaseContracts {
 
     interface Presenter {
         fun onCreate()

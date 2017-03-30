@@ -11,9 +11,9 @@ import kotlinx.android.synthetic.main.activity_main.*
  * The view should be passive. It only tells the presenter that events have happen and shows information that comes from the presenter.
  * Should set the presenter to null whenever onDestroy() is called
  */
-class MainActivity: BaseActivity(), MainInterfaces.View {
+class MainActivity: BaseActivity(), MainContracts.View {
 
-    internal var presenter: MainInterfaces.Presenter? = MainPresenter(this)
+    internal var presenter: MainContracts.Presenter? = MainPresenter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class MainActivity: BaseActivity(), MainInterfaces.View {
         super.onDestroy()
     }
 
-    //region MainInterfaces.View
+    //region MainContracts.View
 
     override fun showGreeting(greeting: String) {
         greetingTextView.text = greeting
