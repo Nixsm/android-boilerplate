@@ -1,5 +1,6 @@
 package io.ckl.boilerplate.modules.main
 
+import io.ckl.boilerplate.models.Greeting
 import io.ckl.boilerplate.modules.base.BaseContracts
 
 class MainContracts {
@@ -16,9 +17,11 @@ class MainContracts {
     }
 
     interface Interactor {
+        fun fetchGreeting()
     }
 
     interface InteractorOutput {
+        fun onGreetingFetched(greeting: Greeting)
     }
 
 }

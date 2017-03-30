@@ -3,9 +3,10 @@ package io.ckl.boilerplate.modules.main
 import android.app.Activity
 
 /**
- * Created by nicholas on 30/03/17.
+ * This in an example Router
+ *
+ * The router is responsible for handling transitions between activities
  */
-
 class MainRouter(var activity: Activity?): MainContracts.Router {
 
 }
