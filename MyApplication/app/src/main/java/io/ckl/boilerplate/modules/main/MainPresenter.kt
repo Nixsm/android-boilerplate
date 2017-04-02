@@ -1,6 +1,7 @@
 package io.ckl.boilerplate.modules.main
 
 import android.app.Activity
+import android.content.Intent
 import io.ckl.boilerplate.models.Greeting
 
 /**
@@ -17,7 +18,7 @@ class MainPresenter(internal var view: MainContracts.View?): MainContracts.Prese
 
     // region MainContracts.Presenter
 
-    override fun onCreate() {
+    override fun onCreate(intent: Intent?) {
         interactor?.fetchGreeting()
     }
 
