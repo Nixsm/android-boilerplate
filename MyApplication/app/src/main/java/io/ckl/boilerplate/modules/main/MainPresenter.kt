@@ -27,6 +27,8 @@ class MainPresenter(internal var view: MainContracts.View?): MainContracts.Prese
     }
 
     override fun onDestroy() {
+        interactor?.unRegister()
+        router?.unRegister()
         this.view = null
         this.interactor = null
         this.router = null

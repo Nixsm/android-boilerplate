@@ -13,10 +13,10 @@ class MainContracts {
         fun showGreeting(greeting: String)
     }
 
-    interface Router {
+    interface Router: BaseContracts.Router {
     }
 
-    interface Interactor {
+    interface Interactor: BaseContracts.Interactor {
         fun fetchGreeting()
     }
 

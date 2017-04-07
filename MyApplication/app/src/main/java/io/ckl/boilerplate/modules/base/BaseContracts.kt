@@ -11,4 +11,12 @@ class BaseContracts {
 
     interface View {
     }
+
+    interface Interactor {
+        fun unRegister()
+    }
+
+    interface Router {
+        fun unRegister()
+    }
 }

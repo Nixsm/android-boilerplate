@@ -8,5 +8,12 @@ import android.app.Activity
  * The router is responsible for handling transitions between activities
  */
 class MainRouter(var activity: Activity?): MainContracts.Router {
+    // region MainContracts.Router
+
+    override fun unRegister() {
+        activity = null
+    }
+
+    // end region
 
 }
