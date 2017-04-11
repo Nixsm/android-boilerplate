@@ -34,7 +34,7 @@ class MainPresenter(internal var view: MainContracts.View?): MainContracts.Prese
         router = null
     }
 
-    // end region
+    // endregion
 
 
     // region MainContracts.InteractorOutput
@@ -43,5 +43,5 @@ class MainPresenter(internal var view: MainContracts.View?): MainContracts.Prese
         view?.showGreeting(greeting.content)
     }
 
-    // end region
+    // endregion
 }

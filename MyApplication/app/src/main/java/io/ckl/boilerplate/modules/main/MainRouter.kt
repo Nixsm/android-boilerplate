@@ -14,6 +14,6 @@ class MainRouter(var activity: Activity?): MainContracts.Router {
         activity = null
     }
 
-    // end region
+    // endregion
 
 }

@@ -35,6 +35,6 @@ class MainActivity: BaseActivity(), MainContracts.View {
         greetingTextView.text = greeting
     }
 
-    //end region
+    //endregion
 
 }

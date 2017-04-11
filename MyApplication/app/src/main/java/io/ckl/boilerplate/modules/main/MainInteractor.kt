@@ -20,7 +20,7 @@ class MainInteractor(var output: MainContracts.InteractorOutput?): MainContracts
         output = null
     }
 
-    // end region
+    // endregion
 
 
 }
